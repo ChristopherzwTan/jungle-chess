@@ -3,28 +3,34 @@
 #ifndef ANIMAL_HPP_
 #define ANIMAL_HPP_
 
-class animal {
-  private:
-    int team;
-    string name;
-    int power;
+using namespace std;
 
+enum team_t{red, blue};
+
+class animal {
   public:
     // Constructor
-    animal();
+    animal(team_t, string, int);
 
     // Destructor
     ~animal();
 
     // Accessors
-    int getTeam();
-    int getPower();
-    string getName();
+    team_t getTeam() const;
+    string getName() const;
+    int getPower() const;
     
     // Mutators
-    void setTeam(int);
+    void setTeam(team_t);
     void setName(string);
     void setPower(int);
+
+
+  private:
+    team_t team_;
+    string name_;
+    int power_;
+
 
 };
 
