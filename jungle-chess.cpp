@@ -15,6 +15,7 @@ void initializePieces();
 
 int main(int argc, char *argv[]) {
 
+  //TODO: REPLACE ALL THE land_t enums with the square class
   // Initialize the board
   land_t board[ROWS][COLUMNS] = {
     {ground, ground, trap, blueden, trap, ground, ground},
