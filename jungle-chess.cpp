@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
     {ground, ground, trap, redden, trap, ground, ground}
   };
 
-  initializePieces();
+  // cout << alive[0].getName << endl;
   printBoard(board);
 
 
@@ -73,7 +73,8 @@ void printBoard(land_t board[9][7]) {
 
 
 void initializePieces() {
-  vector<animal> alive; 
+
+  vector<animal> alive;
   vector<animal> dead;
 
   animal redRat(red, rat, 6, 7);
