@@ -27,6 +27,13 @@ int getPower() const {
   return power_;
 }
     
+int getRow() const {
+  return row_;
+}
+
+int getColumn() const {
+  return column_;
+}
 
 // Muatators
 void setTeam(team_t team) {
@@ -41,5 +48,16 @@ void setPower(int power) {
   power_ = power;
 }
 
+void setRow(int row) {
+  row_ = row;
+}
 
+void setColumn(int column) {
+  column_ = column;
+}
+
+void setLocation(int row, int column) {
+  row_ = row;
+  column_ = column;
+}
 

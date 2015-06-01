@@ -19,18 +19,24 @@ class animal {
     team_t getTeam() const;
     string getName() const;
     int getPower() const;
+    int getRow() const;
+    int getColumn() const;
     
     // Mutators
     void setTeam(team_t);
     void setName(string);
     void setPower(int);
+    void setRow(int);
+    void setColumn(int);
+    void setLocation(int, int);
 
 
   private:
     team_t team_;
     string name_;
     int power_;
-
+    int row_;
+    int column_;
 
 };
 
