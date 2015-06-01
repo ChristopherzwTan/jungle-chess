@@ -3,23 +3,15 @@
 #include <string>
 #include <ctype.h>
 #include "animal.hpp"
-//#include "square.hpp"
+#include "square.hpp"
 
 #define ROWS 9
 #define COLUMNS 7
 
-// Enums for the board
-enum land_t {
-  ground, 
-  water, 
-  trap, 
-  redden, 
-  blueden 
-};
-
 
 // Function prototypes
 void printBoard(land_t board[9][7]);
+void initializePieces();
 
 int main(int argc, char *argv[]) {
 
@@ -36,7 +28,9 @@ int main(int argc, char *argv[]) {
     {ground, ground, trap, redden, trap, ground, ground}
   };
 
+  initializePieces();
   printBoard(board);
+
 
   return 0;
 
@@ -70,4 +64,9 @@ void printBoard(land_t board[9][7]) {
     } 
     cout << "\n---------------------\n";
   }
+}
+
+
+void initializePieces() {
+  
 }
