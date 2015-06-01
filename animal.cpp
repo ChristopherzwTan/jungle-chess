@@ -1,11 +1,13 @@
-#include "animal.hpp"
+#include "animal.h"
 
+using namespace std;
 
 // Constructor
-animal::animal(team_t team, string name, int power) {
+animal::animal(team_t team, animal_t name, int row, int column) {
   team_ = team;
   name_ = name;
-  power_ = power;
+  row_ = row;
+  column_ = column;
 }
 
 
@@ -15,48 +17,40 @@ animal::~animal()
 }
 
 // Accessors
-team_t getTeam() const {
+team_t animal::getTeam() const {
   return team_;
 }
 
-string getName() const {
+animal_t animal::getName() const {
   return name_;
 }
  
-int getPower() const {
-  return power_;
-}
-    
-int getRow() const {
+int animal::getRow() const {
   return row_;
 }
 
-int getColumn() const {
+int animal::getColumn() const {
   return column_;
 }
 
 // Muatators
-void setTeam(team_t team) {
+void animal::setTeam(team_t team) {
   team_ = team; 
 }
 
-void setName(string name) {
+void animal::setName(animal_t name) {
   name_ = name;
 }
 
-void setPower(int power) {
-  power_ = power;
-}
-
-void setRow(int row) {
+void animal::setRow(int row) {
   row_ = row;
 }
 
-void setColumn(int column) {
+void animal::setColumn(int column) {
   column_ = column;
 }
 
-void setLocation(int row, int column) {
+void animal::setLocation(int row, int column) {
   row_ = row;
   column_ = column;
 }

@@ -1,31 +1,30 @@
 #include <string>
 
-#ifndef ANIMAL_HPP_
-#define ANIMAL_HPP_
+#ifndef ANIMAL_H_
+#define ANIMAL_H_
 
 using namespace std;
 
 enum team_t{red, blue};
+enum animal_t{rat, cat, dog, wolf, leopard, tiger, lion, elephant};
 
 class animal {
   public:
     // Constructor
-    animal(team_t, string, int);
+    animal(team_t, animal_t, int, int);
 
     // Destructor
     ~animal();
 
     // Accessors
     team_t getTeam() const;
-    string getName() const;
-    int getPower() const;
+    animal_t getName() const;
     int getRow() const;
     int getColumn() const;
     
     // Mutators
     void setTeam(team_t);
-    void setName(string);
-    void setPower(int);
+    void setName(animal_t);
     void setRow(int);
     void setColumn(int);
     void setLocation(int, int);
@@ -33,8 +32,7 @@ class animal {
 
   private:
     team_t team_;
-    string name_;
-    int power_;
+    animal_t name_;
     int row_;
     int column_;
 

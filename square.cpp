@@ -1,4 +1,4 @@
-#include "square.hpp"
+#include "square.h"
 
 // Constructor
 square::square(land_t type, bool occupied) {
@@ -9,21 +9,21 @@ square::square(land_t type, bool occupied) {
 // Destructor
 
 // Accessors
-land_t getType() const {
+land_t square::getType() const {
   return type_;
 }
 
-bool getOccupancy() const {
+bool square::getOccupancy() const {
   return occupied_;
 }
 
 
 // Mutators
-void setLand(land_t type) {
+void square::setLand(land_t type) {
   type_ = type;
 }
 
-void setOccupancy(bool occupied) {
+void square::setOccupancy(bool occupied) {
   occupied_ = occupied;
 }
 

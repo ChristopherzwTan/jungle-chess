@@ -1,6 +1,6 @@
 
-#ifndef SQUARE_HPP_
-#define SQUARE_HPP_
+#ifndef SQUARE_H_
+#define SQUARE_H_
 
 enum land_t{
   ground, 
