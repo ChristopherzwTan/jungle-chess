@@ -3,8 +3,8 @@
 #include <string>
 #include <ctype.h>
 #include <vector>
-#include "animal.h"
-#include "square.h"
+#include "include/animal.h"
+#include "include/square.h"
 
 #define ROWS 9
 #define COLUMNS 7
