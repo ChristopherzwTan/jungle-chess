@@ -29,4 +29,4 @@ class square {
     bool occupied_;
 };
 
-#endif /* SQUARE_HPP_ */
+#endif /* SQUARE_H_ */

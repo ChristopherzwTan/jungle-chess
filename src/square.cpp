@@ -1,4 +1,4 @@
-#include "square.h"
+#include "include/square.h"
 
 // Constructor
 square::square(land_t type, bool occupied) {

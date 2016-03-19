@@ -1,4 +1,12 @@
-#include "animal.h"
+/*
+ * Author: Christopher Tan
+ * Date: March 19, 2016
+ *
+ *
+ */
+
+
+#include "include/animal.h"
 
 using namespace std;
 

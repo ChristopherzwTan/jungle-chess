@@ -9,7 +9,7 @@ CFLAGS = -Wall -g
 TARGET = jungle-chess
 
 all: 
-	  g++ animal.cpp jungle-chess.cpp -g -Wall -o jungle-chess 
+	  g++ src/animal.cpp src/jungle-chess.cpp -g -Wall -o jungle-chess 
 
 Clean:
 	rm -rf *.o

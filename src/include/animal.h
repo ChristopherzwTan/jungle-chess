@@ -38,5 +38,5 @@ class animal {
 
 };
 
-#endif /* ANIMAL_HPP_ */
+#endif /* ANIMAL_H_ */
 
